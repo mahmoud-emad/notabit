@@ -22,7 +22,7 @@ dependencies = [
     # onnxruntime (MIT), the same runtime version the page uses.
     "numpy==2.5.5",
     "onnxruntime==1.32.0",
-    "openai==3.57.0",
+    "openai==3.59.0",
     "openpyxl==3.1.5",
     "pdfplumber==0.11.11",
     "pgvector==0.5.1",
