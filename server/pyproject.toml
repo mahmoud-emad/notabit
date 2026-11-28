@@ -27,7 +27,7 @@ dependencies = [
     "pdfplumber==0.11.11",
     "pgvector==0.5.1",
     "playwright==1.65.2",
-    "procrastinate==3.12.0",
+    "procrastinate==3.11.0",
     "psycopg[binary,pool]==3.3.9",
     "pydantic==2.14.4",
     "pydantic-settings==2.16.3",
