@@ -5,6 +5,11 @@ updates:
     directory: /server
     schedule:
       interval: weekly
+    ignore:
+      # 3.12 renamed the SQL function and type the job queue calls (v1 to v2), so it
+      # needs a migration for existing databases first. See notabit/jobs/__init__.py.
+      - dependency-name: procrastinate
+        update-types: ["version-update:semver-minor", "version-update:semver-major"]
     groups:
       server:
         patterns: ["*"]
