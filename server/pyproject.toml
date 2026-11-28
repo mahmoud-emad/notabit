@@ -80,4 +80,8 @@ testpaths = ["tests"]
 asyncio_mode = "auto"
 asyncio_default_fixture_loop_scope = "session"
 asyncio_default_test_loop_scope = "session"
-filterwarnings = ["error"]
+filterwarnings = [
+  "error",
+  # trafilatura 2.4 imports urllib3 SOCKS support, which warns when PySocks is absent. We do not use SOCKS proxies.
+  "ignore:SOCKS support in urllib3:urllib3.exceptions.DependencyWarning",
+]
